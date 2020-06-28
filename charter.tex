@@ -1,7 +1,7 @@
 \documentclass[11pt]{charter}
 
 % El títulos de la memoria, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \ttitle
-\titulo{Título del proyecto} 
+\titulo{Robot móvil de inspección y desinfección} 
 
 % Nombre del posgrado, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \degreename
 \posgrado{Carrera de Especialización en Sistemas Embebidos} 
@@ -11,7 +11,7 @@
 %\posgrado{Maestría en Internet de las cosas}
 
 % Tu nombre, se puede usar el cualquier lugar del documento con el comando \authorname
-\autor{Nombre del Autor} 
+\autor{Sergio Alberino} 
 
 % El nombre del director y co-director, se puede usar el cualquier lugar del documento con el comando \supname y \cosupname y \pertesupname y \pertecosupname
 \director{Nombre del Director}
@@ -21,8 +21,8 @@
 \pertenenciaCoDirector{}
 
 % Nombre del cliente, quien va a aprobar los resultados del proyecto, se puede usar con el comando \clientename y \empclientename
-\cliente{Nombre del cliente}
-\empresaCliente{Empresa del cliente}
+\cliente{Grupo de Inteligencia Artificial y Robótica}
+\empresaCliente{Universidad Tecnológica Nacional - Facultad Regional Beunos Aires}
 
 % Nombre y pertenencia de los jurados, se pueden usar el cualquier lugar del documento con el comando \jurunoname, \jurdosname y \jurtresname y \perteunoname, \pertedosname y \pertetresname.
 \juradoUno{Nombre y Apellido (1)}
@@ -63,7 +63,7 @@
 \hline
 \rowcolor[HTML]{C0C0C0} 
 Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios realizados} & Fecha      \\ \hline
-1.0      & Creación del documento                                                          & 22/06/2020 \\ \hline
+1.0      & Creación del documento                                                          & 27/06/2020 \\ \hline
 1.1      & Ejemplo de un texto muy largo que debiera ocupar más de una línea para que tengan de ejemplo                                                                                																						   & dd/mm/aaaa \\ \hline
 1.2      & Otro ejemplo \newline
 		   Con texto partido \newline
@@ -85,7 +85,7 @@ Buenos Aires, \fechaInicioName
 
 \vspace{2cm}
 
-Por medio de la presente se acuerda con el Ing. \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en el prototipo preliminar de un\textcolor{red}{... completar con una descripción de una o dos líneas}, y tendrá un presupuesto preliminar estimado de 600 hs de trabajo y \textcolor{red}{\$XXX}, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
+Por medio de la presente se acuerda con el Ing. \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en el prototipo preliminar de un robot móvil útil para tareas semiautónomas de inspección y desinfección, y tendrá un presupuesto preliminar estimado de 600 hs de trabajo y \textcolor{red}{\$XXX}, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
 
 Se adjunta a esta acta la planificación inicial.
 
@@ -108,22 +108,10 @@ Se adjunta a esta acta la planificación inicial.
 \section{Descripción técnica-conceptual del Proyecto a realizar}
 \label{sec:descripcion}
 
-\begin{consigna}{red}
-El objetivo es que el lector en una o dos páginas entienda de qué se trata el proyecto y cuáles son sus desafíos, su motivación y su importancia.
-Se debe destacar claramente cuál es el valor que agrega el proyecto a realizar. ``El presente proyecto se destaca especialmente por incorporar tal cosa... Esto lo diferencia de otros sistemas similares en que ...''
-
-Puede ser útil incluir en esta sección la respuesta a alguna de estas preguntas:
-
-\begin{itemize}
-\item ¿Cómo se vincula este proyecto con la misión de la organización?
-\item ¿Cómo se inserta este proyecto en el modelo de negocio de la organización?
-\item ¿Ayuda a la explicación si se incluye un lienzo Canvas del Modelo de Negocio?
-\item ¿En qué estado del ciclo de vida está el producto que se desea reemplazar o mejorar?
-\item ¿Cuales son las necesidades que debe satisfacer?
-\item ¿Por dónde pasa la innovación?
-\end{itemize}
-
-La descripción técnica-conceptual \textbf{debe incluir al menos un diagrama en bloques del sistema }y una frase como la siguiente: ``En la Figura \ref{fig:diagBloques} se presenta el diagrama en bloques del sistema. Se observa que...''. Luego recién más abajo de haber puesto esta frase se pone la figura. La regla es que las figuras nunca pueden ir antes de ser mencionadas en el texto, porque sino el lector no entiende por qué de pronto aparece una figura.
+\begin{consigna} 
+ La idea consiste en el desarrollo de una plataforma móvil que pueda ser controlada a distancia para inspeccionar zonas de difícil acceso o para proveer servicios de desinfección por efecto de rayos Ultravioletas. Esto sería principalmente útil en instituciones médicas en las que es posible el contagio de enfermedades por la propagación de bacterias y virus en ambientes comunes.
+La plataforma debería contar con una placa de procesamiento central (Edu-CIAA) que recibe datos directos (o pre procesados por otra/s placa/s) y una placa de control para el accionamiento de motores y/o dispositivos adicionales (como puede ser el encendido de un tubo UV).
+Adicionalmente, el robot podría llevar una cámara inalámbrica para dar mayor información sobre las zonas inspeccionadas.En la Figura \ref{fig:diagBloques} se presenta el diagrama en bloques del sistema. 
 
 \vspace{25px}
 
@@ -136,7 +124,12 @@ La descripción técnica-conceptual \textbf{debe incluir al menos un diagrama en
 
 \vspace{25px}
 
-El tamaño de la tipografía en la figura debe ser adecuado para que NO pase lo que ocurre acá, donde el lector debe esforzarse para poder leer el texto. Los colores usados en el diagrama deben ser adecuados, tal que ayuden a comprender mejor el diagrama.
+Si bien existen plataformas robots similares, las mismas suelen estar fabricadas fuera del país, con lo que el costo de adquisición y transporte resultan particularmente elevados. Además, un desarrollo local documentado contaría con la posibilidad de soporte técnico dentro de las mismas instituciones involucradas.
+La “Desinfección sin residuos químicos“ por Luz ultravioleta ha demostrado efectividad como germicida, resultando letal para virus, bacterias, esporas de hongos y microorganismos superiores, ya que altera su ADN, evitando su reproducción.
+Se prevé algún tipo de conectividad inalámbrica para control y obtención de datos, desde un dispositivo móvil. La idea es dejar preparada la plataforma para la posibilidad posterior de incorporación de módulos que proveanservicios de valor agregado, como sensores específicos, posicionamiento GPS, etc.
+La plataforma robot debe poder operar con baterías recargables que le den una autonomía aceptable para la tarea a realizar.
+La presente propuesta espera ser aprovechada en el Grupo de Inteligencia Artificial y Robótica de la UTN- Facultad Regional Buenos Aires, El hardware resultante podrá ser utilizado también para la evaluación de algoritmos de Inteligencia Artificial, para aplicaciones en la industria local, y para actividades de docencia e investigación.
+
 \end{consigna}
 
 
@@ -144,18 +137,6 @@ El tamaño de la tipografía en la figura debe ser adecuado para que NO pase lo 
 \label{sec:interesados}
 
 \begin{consigna}{red} 
-Nota: (borrar esto y todas las consignas en color rojo antes de entregar este documento).
- 
-Es inusual que una misma persona esté en más de un rol, incluso en proyectos chicos.
- 
-Si se considera que una persona cumple dos o más roles, entonces sólo dejarla en el rol más importante. Por ejemplo:
-
-\begin{itemize}
-\item Si una persona es Cliente pero también colabora u orienta, dejarla solo como Cliente.
-\item Si una persona es el Responsable, no debe ser colocado también como Miembro del equipo.
-\end{itemize}
-
-Pero en cambio sí es usual que el Cliente y el Auspiciante sean el mismo, por ejemplo.
 
 \begin{table}[ht]
 %\caption{Identificación de los interesados}
@@ -177,20 +158,6 @@ Usuario final &                   &              	&        	\\ \hline
 \end{tabularx}
 \end{table}
 
-El Director suele ser uno de los Orientadores.
-
-No dejar celdas vacías; si no hay nada que poner en una celda colocar un signo ``-''.
-
-No dejar filas vacías; si no hay nada que poner en una fila entonces eliminarla.
-
-Sería deseable listar a continuación de la tabla las principales características de cada interesado.
- 
-Por ejemplo:
-\begin{itemize}
-\item Auspiciante: es riguroso y exigente con la rendición de gastos. Tener mucho cuidado con esto.
-\item Equipo: Juan Perez, suele pedir licencia porque tiene un familiar con una enfermedad. Planificar considerando esto.
-\item Orientador: María Gómez, nos va a poder ayudar mucho con la gestión de impuestos.
-\end{itemize}
 
 \end{consigna}
 
@@ -199,10 +166,8 @@ Por ejemplo:
 \section{1. Propósito del proyecto}
 \label{sec:proposito}
 
-\begin{consigna}{red}
-¿Por qué se hace el proyecto? ¿Qué se quiere lograr? 
-
-Se recomienda que sea solo un párrafo que empiece diciendo ``El propósito de este proyecto es...''.
+\begin{consigna}
+El propósito de este proyecto es el  desarrollo de un prototipo de plataforma móvil de observación para tareas semiautónomas de inspección y desinfección, con documentación completa para su reproducción a escala industrial.
 \end{consigna}
 
 \section{2. Alcance del proyecto}

@@ -14,15 +14,15 @@
 \autor{Sergio Alberino} 
 
 % El nombre del director y co-director, se puede usar el cualquier lugar del documento con el comando \supname y \cosupname y \pertesupname y \pertecosupname
-\director{Nombre del Director}
-\pertenenciaDirector{pertenencia} 
+\director{Claudio Verrastro}
+\pertenenciaDirector{CNEA, UTN.BA} 
 % FIXME:NO IMPLEMENTADO EL CODIRECTOR ni su pertenencia
 \codirector{} % si queda vacio no se deberíá incluir 
 \pertenenciaCoDirector{}
 
 % Nombre del cliente, quien va a aprobar los resultados del proyecto, se puede usar con el comando \clientename y \empclientename
 \cliente{Grupo de Inteligencia Artificial y Robótica}
-\empresaCliente{Universidad Tecnológica Nacional - Facultad Regional Beunos Aires}
+\empresaCliente{Universidad Tecnológica Nacional - Facultad Regional Buenos Aires}
 
 % Nombre y pertenencia de los jurados, se pueden usar el cualquier lugar del documento con el comando \jurunoname, \jurdosname y \jurtresname y \perteunoname, \pertedosname y \pertetresname.
 \juradoUno{Nombre y Apellido (1)}
@@ -108,7 +108,7 @@ Se adjunta a esta acta la planificación inicial.
 \section{Descripción técnica-conceptual del Proyecto a realizar}
 \label{sec:descripcion}
 
-\begin{consigna} 
+\begin{consigna}{black}
  La idea consiste en el desarrollo de una plataforma móvil que pueda ser controlada a distancia para inspeccionar zonas de difícil acceso o para proveer servicios de desinfección por efecto de rayos Ultravioletas. Esto sería principalmente útil en instituciones médicas en las que es posible el contagio de enfermedades por la propagación de bacterias y virus en ambientes comunes.
 La plataforma debería contar con una placa de procesamiento central (Edu-CIAA) que recibe datos directos (o pre procesados por otra/s placa/s) y una placa de control para el accionamiento de motores y/o dispositivos adicionales (como puede ser el encendido de un tubo UV).
 Adicionalmente, el robot podría llevar una cámara inalámbrica para dar mayor información sobre las zonas inspeccionadas.En la Figura \ref{fig:diagBloques} se presenta el diagrama en bloques del sistema. 
@@ -147,14 +147,11 @@ La presente propuesta espera ser aprovechada en el Grupo de Inteligencia Artific
 Rol           & Nombre y Apellido & Organización 	& Puesto 	\\ \hline
 Auspiciante   &                   &              	&        	\\ \hline
 Cliente       & \clientename      &\empclientename	&        	\\ \hline
-Impulsor      &                   &              	&        	\\ \hline
+Impulsor      & Secretaría de Ciencia, Tecnología e innovación productiva                  &\empclientename&        	\\ \hline
 Responsable   & \authorname       & FIUBA        	& Alumno 	\\ \hline
 Colaboradores &                   &              	&        	\\ \hline
 Orientador    & \supname	      & \pertesupname 	& Director	Trabajo final \\ \hline
-Equipo        & miembro1 \newline 
-				miembro2          &              	&        	\\ \hline
-Opositores    &                   &              	&        	\\ \hline
-Usuario final &                   &              	&        	\\ \hline
+Usuario final & Personal de salud & Establecimientos hospitalarios 	&        	\\ \hline
 \end{tabularx}
 \end{table}
 
@@ -166,21 +163,29 @@ Usuario final &                   &              	&        	\\ \hline
 \section{1. Propósito del proyecto}
 \label{sec:proposito}
 
-\begin{consigna}
-El propósito de este proyecto es el  desarrollo de un prototipo de plataforma móvil de observación para tareas semiautónomas de inspección y desinfección, con documentación completa para su reproducción a escala industrial.
+\begin{consigna}{black}
+El propósito de este proyecto es desarrollar un prototipo de plataforma móvil de observación para tareas semiautónomas de inspección y desinfección, con documentación completa para su reproducción a escala industrial. El dispositivo deberá poder controlarse a distancia para inspeccionar zonas de difícil acceso o para proveer servicios de desinfección por efecto de rayos Ultravioletas. Esto sería principalmente útil en instituciones médicas en las que es posible el contagio de enfermedades por la propagación de bacterias y virus en ambientes comunes.
 \end{consigna}
 
 \section{2. Alcance del proyecto}
 \label{sec:alcance}
+\begin{consigna}{black}
+\begin{itemize}
+\item Diseño e implementación de una plataforma robot de dimensiones reducidas, con conectividad inalámbrica
+\item Programación del firmware los módulos correspondientes. 
+\item Programación del software de comunicaciones 
+Pruebas de funcionamiento.
+\item Documentación del trabajo. 
+\end{itemize}
 
-\begin{consigna}{red}
-¿Qué se incluye y que no se incluye en este proyecto?
+El presente proyecto NO incluye: 
 
-Se refiere al trabajo a hacer para entregar el producto o resultado especificado. 
+\begin{itemize}
+\item La instalación y puesta en marcha del sistema completo de inspección y desinfección, en institución hospitalario (Salvo que el tiempo disponible lo permita). 
+\item El robot no monitoreará,  ni  realizará la carga de la batería.
+\item No se incluye cargador.
+\end{itemize}
 
-Explicitar todo lo quede comprendido dentro del alcance del proyecto.
-
-Explicitar además todo lo que no quede incluido (``El presente proyecto no incluye...'')
 
 \end{consigna}
 
@@ -188,64 +193,53 @@ Explicitar además todo lo que no quede incluido (``El presente proyecto no incl
 \section{3. Supuestos del proyecto}
 \label{sec:supuestos}
 
-\begin{consigna}{red}
-``Para el desarrollo del presente proyecto se supone que: ...''
+\begin{consigna}{black}
+Para el desarrollo del presente proyecto se supone que: 
 
 \begin{itemize}
-\item Supuesto 1
-\item Supuesto 2...
+\item Se contará con disponibilidad de los laboratorios e instrumental de la  Secretaría de Ciencia, Tecnología e innovación productiva. UTN. Buenos Aires, para cubrir la tarea de desarrollo.
+\item Se dispondrá de tiempo durante la jornada laboral para la realización del mismo. 
+\item  Se dispondrá de todos los componentes y herramientas necesarios. 
 \end{itemize}
 
-Por ejemplo, se podrían incluir supuestos respecto a disponibilidad de tiempo y recursos humanos y materiales, sobre la factibilidad técnica de distintos aspectos del proyecto, sobre otras cuestiones que sean necesarias para el éxito del proyecto como condiciones macroeconómicas o reglamentarias.
 \end{consigna}
 
 \section{4. Requerimientos}
 \label{sec:requerimientos}
 
-\begin{consigna}{red}
-Los requerimientos deben numerarse y de ser posible agruparlos por afinidad:
-
+\begin{consigna}{black}
 \begin{enumerate}
-\item Grupo de requerimientos asociados con...
+\item Requerimientos funcionales
 	\begin{enumerate}
-	\item Requerimiento 1
-	\item Requerimiento 2
-	\item Requerimiento 3 (prioridad menor)
+	\item Capacidad de locomoción.  El robot debe ser capaz de desplazarse por medio de ruedas motorizadas, a través de superficies planas.
+	\item Capacidad de percepción. El robot debe ser capaz de detectar y obtener información del medio. 
+	\item Capacidad de comunicación inalámbrica.
+	\item El robot deberá funcionar con alimentación a batería, recargable.
+	\item El proyecto debe ser extensible a una posible herramienta de enseñanza e investigación
+
 	\end{enumerate}
-\item Grupo de requerimientos asociados con...
+\item Requerimientos no funcionales
 	\begin{enumerate}
-	\item Requerimiento 1
-	\item Requerimiento 2 (prioridad menor)
+	\item Que el robot no resulte peligroso para el ambiente o las personas con las que podría interactuar.
+	\item Que se respeten regulaciones en cuanto a radiación en el espectro ultravioleta.
+	\item Se utilizarán componentes electrónicos disponibles comercialmente en Argentina.
+	
 	\end{enumerate}
 \end{enumerate}
 
-Leyendo los requerimientos se debe poder interpretar cómo será el proyecto y su funcionalidad.
-
-De ser posible indicar cómo se obtuvieron cada uno de los requerimientos 
-
-Indicar claramente cuál es la prioridad entre los distintos requerimientos. 
-
-No olvidarse de que los requerimientos incluyen a las regulaciones y normas vigentes!!!
-
-Y al escribirlos seguir las siguientes reglas:
-\begin{itemize}
-\item Ser breve y conciso (nadie lee cosas largas). 
-\item Ser específico: no dejar lugar a confusiones.
-\item Expresar los requerimientos en términos que sean cuantificables y medibles.
-\end{itemize}
 
 \end{consigna}
 
 \section{5. Entregables principales del proyecto}
 \label{sec:entregables}
 
-\begin{consigna}{red}
+\begin{consigna}{black}
 Cosas como: 
 \begin{itemize}
+\item Prototipo funcional
 \item Manual de uso
-\item Diagrama esquemático
-\item Código fuente
-\item Diagrama de instalación
+\item Diagrama esquemático del hardware
+\item Códigos fuentes software
 \item Informe final
 
 \end{itemize}
@@ -254,36 +248,56 @@ Cosas como:
 
 \section{6. Desglose del trabajo en tareas}
 \label{sec:wbs}
-
-\begin{consigna}{red}
-Se recomienda mostrar el WBS mediante una lista indexada:
-
+\begin{consigna}{black}
 \begin{enumerate}
-\item Grupo de tareas 1
+\item Planificación(35hs) 
 	\begin{enumerate}
-	\item Tarea 1 (tantas hs)
-	\item Tarea 2 (tantas hs)
-	\item Tarea 3 (tantas hs)
+	\item Relevamiento de necesidades(10hs) 
+	\item Análisis de requerimientos(5hs) 
+	\item Confección de la planificación del proyecto(20hs) 
 	\end{enumerate}
-\item Grupo de tareas 2
+\item Diseño e implementación(155hs) 
 	\begin{enumerate}
-	\item Tarea 1 (tantas hs)
-	\item Tarea 2 (tantas hs)
-	\item Tarea 3 (tantas hs)
+	\item Selección de materiales y componentes (10hs)
+	\item Diseño de esquemáticos (35hs) 
+	\item Construcción de hardware de control (35Hs)
+	\item Construcción de hardware de sensores (30hs)
+	\item Integración de hardware (20Hs)
+	\item Pruebas funcionales (25hs) 
 	\end{enumerate}
-	\item Grupo de tareas 3
+	\item Programación de Firmware (130hs) 
 	\begin{enumerate}
-	\item Tarea 1 (tantas hs)
-	\item Tarea 2 (tantas hs)
-	\item Tarea 3 (tantas hs)
-	\item Tarea 4 (tantas hs)
-	\item Tarea 5 (tantas hs)
+	\item Programación software de control de motores  (20hs)
+	\item Implementación de drivers para adquisición de datos de los sensores (20Hs)
+	\item Pruebas de funcionamiento (15hs)
+	\item Desarrollo de firmware integrado (30Hs) 
+	\item Programación software de control comunicación(35hs) 
+	\item Modificaciones para integración al software(10hs) 
+	\end{enumerate}
+	\item Construcción del prototipo (105hs) 
+	\begin{enumerate}
+	\item Diseño mecánico de la plataforma (20Hs)
+	\item Armado del prototipo(40Hs)
+	\item Pruebas funcionales de integración mecánica-electrónica (25Hs)
+	\item Ajuste de parámetros de funcionamiento (20Hs)
+	\end{enumerate}
+	\item Programación de software de aplicación (85hs) 
+	\begin{enumerate}
+	\item Diseño de la interfaz de control (20hs) 
+	\item Programación de la interfaz de control (40Hs)
+	\item Pruebas y ajuste de la interfaz de control
+	\end{enumerate}
+	\item Documentación y presentación (95hs) 
+	\begin{enumerate}
+	\item Informe de avances (10hs)
+	\item Documentación del trabajo realizado (15hs) 
+	\item Creación de manuales de uso (15hs) 
+	\item Realización de Informe del proyecto (35hs) 
+	\item Presentación final (20hs)
 	\end{enumerate}
 \end{enumerate}
 
-Cantidad total de horas: (tantas hs)
-
-Se recomienda que no haya ninguna tarea que lleve más de 40 hs. 
+Cantidad total de horas: (605 hs)
 
 \end{consigna}
 

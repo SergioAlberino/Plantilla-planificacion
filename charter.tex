@@ -64,11 +64,7 @@
 \rowcolor[HTML]{C0C0C0} 
 Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios realizados} & Fecha      \\ \hline
 1.0      & Creación del documento                                                          & 27/06/2020 \\ \hline
-1.1      & Ejemplo de un texto muy largo que debiera ocupar más de una línea para que tengan de ejemplo                                                                                																						   & dd/mm/aaaa \\ \hline
-1.2      & Otro ejemplo \newline
-		   Con texto partido \newline
-		   En varias líneas \newline
-		   A propósito                                                                     & dd/mm/aaaa \\ \hline
+1.1      & Cambios a partir de corrección del docente                                                                                																						   & 16/07/2020 \\ \hline
 \end{tabularx}
 \end{table}
 
@@ -76,7 +72,7 @@ Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios 
 
 
 
-\section{Acta de Constitución del Proyecto}
+\section{Acta de constitución del Proyecto}
 \label{sec:acta}
 
 \begin{flushright}
@@ -85,7 +81,7 @@ Buenos Aires, \fechaInicioName
 
 \vspace{2cm}
 
-Por medio de la presente se acuerda con el Ing. \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en el prototipo preliminar de un robot móvil útil para tareas semiautónomas de inspección y desinfección, y tendrá un presupuesto preliminar estimado de 600 hs de trabajo y \textcolor{red}{\$XXX}, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
+Por medio de la presente se acuerda con el Ing. \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'', consistirá esencialmente en el prototipo preliminar de un robot móvil útil para tareas semiautónomas de inspección y desinfección, y tendrá un presupuesto preliminar estimado de 600 hs de trabajo y \$20.000, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
 
 Se adjunta a esta acta la planificación inicial.
 
@@ -95,7 +91,7 @@ Se adjunta a esta acta la planificación inicial.
 \begin{table}[ht]
 \centering
 \begin{tabular}{ccc}
-\begin{tabular}[c]{@{}c@{}}Ariel Lutenberg \\ Director posgrado FIUBA\end{tabular} &  & \begin{tabular}[c]{@{}c@{}}\clientename \\ \empclientename \end{tabular} \vspace{2.5cm} \\ 
+\begin{tabular}[c]{@{}c@{}}Ariel Lutenberg \\ Director posgrado FIUBA\end{tabular} &  & \begin{tabular}[c]{@{}c@{}}Juan Carlos Gómz por \clientename \\ \empclientename \end{tabular} \vspace{2.5cm} \\ 
 \multicolumn{3}{c}{\begin{tabular}[c]{@{}c@{}} \supname \\ Director del Trabajo Final\end{tabular}} \vspace{2.5cm} \\
 \begin{tabular}[c]{@{}c@{}}\jurunoname \\ Jurado del Trabajo Final\end{tabular}     &  & \begin{tabular}[c]{@{}c@{}}\jurdosname\\ Jurado del Trabajo Final\end{tabular}  \vspace{2.5cm}  \\
 \multicolumn{3}{c}{\begin{tabular}[c]{@{}c@{}} \jurtresname\\ Jurado del Trabajo Final\end{tabular}} \vspace{.5cm}                                                                     
@@ -109,9 +105,9 @@ Se adjunta a esta acta la planificación inicial.
 \label{sec:descripcion}
 
 \begin{consigna}{black}
- La idea consiste en el desarrollo de una plataforma móvil que pueda ser controlada a distancia para inspeccionar zonas de difícil acceso o para proveer servicios de desinfección por efecto de rayos Ultravioletas. Esto sería principalmente útil en instituciones médicas en las que es posible el contagio de enfermedades por la propagación de bacterias y virus en ambientes comunes.
-La plataforma debería contar con una placa de procesamiento central (Edu-CIAA) que recibe datos directos (o pre procesados por otra/s placa/s) y una placa de control para el accionamiento de motores y/o dispositivos adicionales (como puede ser el encendido de un tubo UV).
-Adicionalmente, el robot podría llevar una cámara inalámbrica para dar mayor información sobre las zonas inspeccionadas.En la Figura \ref{fig:diagBloques} se presenta el diagrama en bloques del sistema. 
+ La idea consiste en el desarrollo de una plataforma móvil que pueda ser controlada a distancia para inspeccionar zonas de difícil acceso o para proveer servicios de desinfección por efecto de rayos ultravioletas. Esto sería principalmente útil en instituciones médicas en las que es posible el contagio de enfermedades por la propagación de bacterias y virus en ambientes comunes.
+La plataforma debería contar con una placa de procesamiento central (Edu-CIAA) que recibe datos directos (o pre-procesados por otra/s placa/s) y una placa de control para el accionamiento de motores y/o dispositivos adicionales (como puede ser el encendido de un tubo UV).
+Adicionalmente, el robot podría llevar una cámara inalámbrica para dar mayor información sobre las zonas inspeccionadas. En la Figura \ref{fig:diagBloques} se presenta el diagrama en bloques del sistema. 
 
 \vspace{25px}
 
@@ -125,10 +121,10 @@ Adicionalmente, el robot podría llevar una cámara inalámbrica para dar mayor 
 \vspace{25px}
 
 Si bien existen plataformas robots similares, las mismas suelen estar fabricadas fuera del país, con lo que el costo de adquisición y transporte resultan particularmente elevados. Además, un desarrollo local documentado contaría con la posibilidad de soporte técnico dentro de las mismas instituciones involucradas.
-La “Desinfección sin residuos químicos“ por Luz ultravioleta ha demostrado efectividad como germicida, resultando letal para virus, bacterias, esporas de hongos y microorganismos superiores, ya que altera su ADN, evitando su reproducción.
-Se prevé algún tipo de conectividad inalámbrica para control y obtención de datos, desde un dispositivo móvil. La idea es dejar preparada la plataforma para la posibilidad posterior de incorporación de módulos que proveanservicios de valor agregado, como sensores específicos, posicionamiento GPS, etc.
+La “Desinfección sin residuos químicos“ por luz ultravioleta ha demostrado efectividad como germicida, resultando letal para virus, bacterias, esporas de hongos y microorganismos superiores, ya que altera su ADN, evitando su reproducción.
+Se prevé algún tipo de conectividad inalámbrica para control y obtención de datos, desde un dispositivo móvil. La idea es dejar preparada la plataforma para la posibilidad posterior de incorporación de módulos que provean servicios de valor agregado, como sensores específicos, posicionamiento GPS, etc.
 La plataforma robot debe poder operar con baterías recargables que le den una autonomía aceptable para la tarea a realizar.
-La presente propuesta espera ser aprovechada en el Grupo de Inteligencia Artificial y Robótica de la UTN- Facultad Regional Buenos Aires, El hardware resultante podrá ser utilizado también para la evaluación de algoritmos de Inteligencia Artificial, para aplicaciones en la industria local, y para actividades de docencia e investigación.
+La presente propuesta espera ser aprovechada en el Grupo de Inteligencia Artificial y Robótica de la UTN - Facultad Regional Buenos Aires, El hardware resultante podrá ser utilizado también para la evaluación de algoritmos de Inteligencia Artificial, para aplicaciones en la industria local, y para actividades de docencia e investigación.
 
 \end{consigna}
 
@@ -164,31 +160,26 @@ Usuario final & Personal de salud & Establecimientos hospitalarios 	&        	\\
 \label{sec:proposito}
 
 \begin{consigna}{black}
-El propósito de este proyecto es desarrollar un prototipo de plataforma móvil de observación para tareas semiautónomas de inspección y desinfección, con documentación completa para su reproducción a escala industrial. El dispositivo deberá poder controlarse a distancia para inspeccionar zonas de difícil acceso o para proveer servicios de desinfección por efecto de rayos Ultravioletas. Esto sería principalmente útil en instituciones médicas en las que es posible el contagio de enfermedades por la propagación de bacterias y virus en ambientes comunes.
+El propósito de este proyecto es desarrollar un prototipo de plataforma móvil de observación para tareas semiautónomas de inspección y desinfección, con documentación completa para su reproducción a escala industrial. El dispositivo deberá poder controlarse a distancia para inspeccionar zonas de difícil acceso o para proveer servicios de desinfección por efecto de rayos ultravioletas. Esto sería principalmente útil en instituciones médicas en las que es posible el contagio de enfermedades por la propagación de bacterias y virus en ambientes comunes.
 \end{consigna}
 
-\section{2. Alcance del proyecto}
-\label{sec:alcance}
+\section{2. Alcance del proyecto}\label{sec:alcance}
 \begin{consigna}{black}
+\vspace{-12mm}
 \begin{itemize}
 \item Diseño e implementación de una plataforma robot de dimensiones reducidas, con conectividad inalámbrica
 \item Programación del firmware los módulos correspondientes. 
-\item Programación del software de comunicaciones 
-Pruebas de funcionamiento.
+\item Programación del software de comunicaciones. 
+\item Pruebas de funcionamiento.
 \item Documentación del trabajo. 
 \end{itemize}
-
 El presente proyecto NO incluye: 
-
 \begin{itemize}
-\item La instalación y puesta en marcha del sistema completo de inspección y desinfección, en institución hospitalario (Salvo que el tiempo disponible lo permita). 
+\item La instalación y puesta en marcha del sistema completo de inspección y desinfección, en institución hospitalario (salvo que el tiempo disponible lo permita). 
 \item El robot no monitoreará,  ni  realizará la carga de la batería.
 \item No se incluye cargador.
 \end{itemize}
-
-
 \end{consigna}
-
 
 \section{3. Supuestos del proyecto}
 \label{sec:supuestos}
@@ -206,35 +197,32 @@ Para el desarrollo del presente proyecto se supone que:
 
 \section{4. Requerimientos}
 \label{sec:requerimientos}
-
 \begin{consigna}{black}
+\vspace{-12mm}
 \begin{enumerate}
 \item Requerimientos funcionales
 	\begin{enumerate}
 	\item Capacidad de locomoción.  El robot debe ser capaz de desplazarse por medio de ruedas motorizadas, a través de superficies planas.
 	\item Capacidad de percepción. El robot debe ser capaz de detectar y obtener información del medio. 
 	\item Capacidad de comunicación inalámbrica.
-	\item El robot deberá funcionar con alimentación a batería, recargable.
+	\item El robot deberá funcionar con alimentación a batería recargable.
 	\item El proyecto debe ser extensible a una posible herramienta de enseñanza e investigación
 
 	\end{enumerate}
 \item Requerimientos no funcionales
 	\begin{enumerate}
-	\item Que el robot no resulte peligroso para el ambiente o las personas con las que podría interactuar.
-	\item Que se respeten regulaciones en cuanto a radiación en el espectro ultravioleta.
+	\item El robot no debe resultar peligroso para el ambiente o las personas con las que podría interactuar.
+	\item El diseño del robot debe respetar regulaciones en cuanto a radiación en el espectro ultravioleta.
 	\item Se utilizarán componentes electrónicos disponibles comercialmente en Argentina.
-	
 	\end{enumerate}
 \end{enumerate}
-
 
 \end{consigna}
 
 \section{5. Entregables principales del proyecto}
 \label{sec:entregables}
-
+\vspace{-12mm}
 \begin{consigna}{black}
-Cosas como: 
 \begin{itemize}
 \item Prototipo funcional
 \item Manual de uso
@@ -250,42 +238,42 @@ Cosas como:
 \label{sec:wbs}
 \begin{consigna}{black}
 \begin{enumerate}
-\item Planificación(35hs) 
+\item Planificación(50hs) 
 	\begin{enumerate}
 	\item Relevamiento de necesidades(10hs) 
-	\item Análisis de requerimientos(5hs) 
+	\item Análisis de requerimientos(20hs) 
 	\item Confección de la planificación del proyecto(20hs) 
 	\end{enumerate}
 \item Diseño e implementación(155hs) 
 	\begin{enumerate}
 	\item Selección de materiales y componentes (10hs)
 	\item Diseño de esquemáticos (35hs) 
-	\item Construcción de hardware de control (35Hs)
+	\item Construcción de hardware de control (35hs)
 	\item Construcción de hardware de sensores (30hs)
-	\item Integración de hardware (20Hs)
+	\item Integración de hardware (20hs)
 	\item Pruebas funcionales (25hs) 
 	\end{enumerate}
 	\item Programación de Firmware (130hs) 
 	\begin{enumerate}
 	\item Programación software de control de motores  (20hs)
-	\item Implementación de drivers para adquisición de datos de los sensores (20Hs)
+	\item Implementación de drivers para adquisición de datos de los sensores (20hs)
 	\item Pruebas de funcionamiento (15hs)
-	\item Desarrollo de firmware integrado (30Hs) 
+	\item Programación de firmware de control reactivo para funcionamiento del robot (40hs) 
 	\item Programación software de control comunicación(35hs) 
 	\item Modificaciones para integración al software(10hs) 
 	\end{enumerate}
 	\item Construcción del prototipo (105hs) 
 	\begin{enumerate}
-	\item Diseño mecánico de la plataforma (20Hs)
-	\item Armado del prototipo(40Hs)
-	\item Pruebas funcionales de integración mecánica-electrónica (25Hs)
-	\item Ajuste de parámetros de funcionamiento (20Hs)
+	\item Diseño mecánico de la plataforma (20hs)
+	\item Armado del prototipo(40hs)
+	\item Pruebas funcionales de integración mecánica-electrónica (25hs)
+	\item Ajuste de parámetros de funcionamiento (20hs)
 	\end{enumerate}
 	\item Programación de software de aplicación (85hs) 
 	\begin{enumerate}
 	\item Diseño de la interfaz de control (20hs) 
-	\item Programación de la interfaz de control (40Hs)
-	\item Pruebas y ajuste de la interfaz de control
+	\item Programación de la interfaz de control (40hs)
+	\item  Pruebas y ajuste de la interfaz de control (25hs)
 	\end{enumerate}
 	\item Documentación y presentación (95hs) 
 	\begin{enumerate}
@@ -297,7 +285,7 @@ Cosas como:
 	\end{enumerate}
 \end{enumerate}
 
-Cantidad total de horas: (605 hs)
+Cantidad total de horas: (630 hs)
 
 \end{consigna}
 
